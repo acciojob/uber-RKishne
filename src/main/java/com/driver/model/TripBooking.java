@@ -20,7 +20,6 @@ public class TripBooking {
 
 
     public TripBooking(String fromLocation, String toLocation, int distanceInKm, TripStatus status, int bill, Customer customer, Driver driver) {
-        this.tripBookingId = tripBookingId;
         this.fromLocation = fromLocation;
         this.toLocation = toLocation;
         this.distanceInKm = distanceInKm;
@@ -95,11 +94,11 @@ public class TripBooking {
     }
 
     @JsonIgnore
-    @OneToOne
+    @ManyToOne
     @JoinColumn
     private Customer customer;
     @JsonIgnore
-    @OneToOne
+    @ManyToOne
     @JoinColumn
     private Driver driver;
 }

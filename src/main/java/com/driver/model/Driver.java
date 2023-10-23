@@ -70,6 +70,6 @@ public class Driver {
     private Cab cab;
 
     @JsonIgnore
-    @OneToOne(mappedBy = "driver",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "driver",cascade = CascadeType.ALL)
     private List<TripBooking> tripBookingList=new ArrayList<>();
 }
