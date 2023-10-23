@@ -18,8 +18,7 @@ public class TripBooking {
     private TripStatus Status;
     private int bill;
 
-    public TripBooking() {
-    }
+
 
     public TripBooking(int tripBookingId, String fromLocation, String toLocation, int distanceInKm, TripStatus status, int bill, Customer customer, Driver driver) {
         this.tripBookingId = tripBookingId;
